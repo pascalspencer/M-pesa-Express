@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="icon" type="image/x-icon" href="/static/Goku.jpg">
+</head>
+<body>
+    <h1>Mpesa Express Payment Process.</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="flashes">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+
+    <ol>
+        <li>Enter a valid safaricom number: Example - <b>254712345678</b>.</li>
+        <li>Enter the correct amount.</li>
+        <li>Click on the submit button.</li>
+        <li>A prompt will be sent to the phone holding phone number entered.</li>
+        <li>Enter the correct M-pesa pin to complete the transaction</li>
+    </ol>
+    <form action='read_form' method="post" class="form-container">
+        <div id="phone-number">
+            <label for="number">Enter Phone Number:</label><br>
+            <input name="valid_number" id="number" type="text" class="text-area">    
+        </div>
+        <div id="pay-amount">
+            <label for="amount">Enter Amount:</label><br>
+            <input name="total_amount" id="amount" type="text" class="text-area">    
+        </div>
+        <div>
+            <button id="submit-btn" type="submit">Submit</button>
+        </div>
+    
+    </form>
+    <script ></script>
+</body>
+</html>

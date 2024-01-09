@@ -1,0 +1,25 @@
+#submit-btn {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.form-container {
+    margin-left: 25px;
+}
+
+.flashes {
+    font-size: larger;
+    color: red;
+}
+
+.text-area {
+    padding: 5px;
+}
+
+#homepage-btn {
+    padding: 5px;
+}
+
+#home-link {
+    text-decoration: none;
+}
